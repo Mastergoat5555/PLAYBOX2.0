@@ -1,0 +1,29 @@
+index.html <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Playbox – Free Games</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3efff;--ink:#1d1740;--card:#fff;--muted:#6b6590;--line:#d9d2f5;--c1:#ff5d73;--c2:#ffb627;--c3:#2ec4b6;--c4:#6c5ce7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15112e;--ink:#f1edff;--card:#231d47;--muted:#a59ed0;--line:#3a3270}}
+:root[data-theme="dark"]{--bg:#15112e;--ink:#f1edff;--card:#231d47;--muted:#a59ed0;--line:#3a3270}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.4}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 5vw;gap:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.7rem;letter-spacing:-.03em;display:flex;align-items:center;gap:8px}
+.logo i{width:30px;height:30px;border-radius:9px;background:var(--c1);display:inline-block;box-shadow:12px 6px 0 -2px var(--c2),-4px 12px 0 -4px var(--c3);margin-right:14px}
+#search{font:inherit;padding:10px 16px;border-radius:99px;border:2px solid var(--line);background:var(--card);color:var(--ink);width:min(280px,100%)}
+#search:focus,button:focus-visible,.tile:focus-visible{outline:3px solid var(--c4);outline-offset:2px}
+.hero{padding:22px 5vw 8px;max-width:900px}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1;letter-spacing:-.04em;margin:0 0 12px;font-weight:800}
+.hero p{color:var(--muted);font-size:1.1rem;margin:0;max-width:52ch}
+.tabs{display:flex;gap:8px;padding:18px 5vw;flex-wrap:wrap}
+.tabs button{font:inherit;font-weight:700;border:2px solid var(--line);background:var(--card);color:var(--ink);padding:8px 16px;border-radius:99px;cursor:pointer}
+.tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px;padding:4px 5vw 50px}
+.tile{border:0;border-radius:26px;padding:0;cursor:pointer;text-align:left;color:#fff;font:inherit;overflow:hidden;transition:transform .15s}
+.tile:hover{transform:translateY(-4px)
